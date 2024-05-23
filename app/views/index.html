@@ -1,121 +1,19 @@
 {% extends "layouts/main.html" %}
 
-{% block pageTitle %}
-Home – {{serviceName}} – GOV.UK Prototype Kit
-{% endblock %}
-
-{% block beforeContent %}
-
-    <div class="govuk-phase-banner">
-      <p class="govuk-phase-banner__content">
-        <strong class="govuk-tag govuk-tag--red govuk-phase-banner__content__tag">
-          Agent
-        </strong>
-        <strong class="govuk-tag govuk-tag--blue govuk-phase-banner__content__tag">
-          PIP: Orientation
-        </strong>
-        <strong class="govuk-tag govuk-tag--green govuk-phase-banner__content__tag">
-          Check eligibility
-        </strong>
-      </p>
-    </div>
-
-{% endblock %}
-
+{% set pageName="Home" %}
 
 {% block content %}
 
 <div class="govuk-grid-row">
-  <div class="govuk-grid-column-full">
+  <div class="govuk-grid-column-two-thirds">
 
-    <!-- Insert your service name here -->
+    {% include "govuk-prototype-kit/includes/homepage-top.njk" %}
+
     <h1 class="govuk-heading-xl">
-      PIP pre-checks
+      {{ serviceName }}
     </h1>
 
-    <!-- Insert your team name here -->
-    <p>This prototype is maintained by <a href="https://dwpdigital.atlassian.net/wiki/spaces/HPDU/pages/133329093655/Team+Toucan">Team Toucan</a>.</p>
-
-    <!-- Add email contacts for key members of your team -->
-    <p>
-      <a href="mailto:paul.coffield@engineering.digital.dwp.gov.uk">Paul Coffield</a> (Interaction Designer)
-
-      <br>
-
-      <h2 class="govuk-heading-m">Purpose</h2>
-
-      <p>Mannually confirm claimant details and confirm eligibilty for PIP.</p>
-      <br>
-
-     
-      <div class="govuk-grid-row">
-      <div class="govuk-grid-column-two-thirds">
-        <h2 class="govuk-heading-l" style="border-bottom: 1px solid lightgray; margin-bottom: 0">Claim assurance & eligibility checks<br>
-          <span class="govuk-hint">Allow agents to perform manual data checks.</span>
-        </h2>
-  
-        <hr class="govuk-!-margin-top-0">
-  
-        <h2 class="govuk-heading-m">
-          Latest version
-        </h2>
-  
-        <ul
-          class="govuk-list govuk-list--bullet">
-          <li>
-            <a href="/v1/home">V 1.0</a>
-          </li>
-        </ul>
-
-        <p>
-          <span class="govuk-!-font-weight-bold">Changelog:</span>
-          <br>
-          <ul class="govuk-list govuk-list--bullet">
-            <li><a href="/v0/home">V 0.1</a> - Initial thoughts on flow & screen designs</li>
-          </ul>
-        </p>
-
-        <!-- How would you like to display the other versions of your prototype? You could use a details component here -->
-  
-        <hr>
-
-        
-
-      </div>
-
-
-      <div class="govuk-grid-row">
-        <div class="govuk-grid-column-one-third">
-          <h2 class="govuk-heading-l" style="border-bottom: 1px solid lightgray; margin-bottom: 0">Design research<br>
-            <span class="govuk-hint">Non-coded design work.</span>
-          </h2>
-    
-          <hr class="govuk-!-margin-top-0">
-    
-          {# <h2 class="govuk-heading-m">
-            Latest version
-          </h2> #}
-    
-          <ul
-            class="govuk-list govuk-list--bullet">
-            <li>
-              <a href="https://app.mural.co/t/dwpdigital7412/m/dwpdigital7412/1715244235751/c04a77bbd27e51924995a75fff581cd5d1d3030f?sender=ucafca6dd36f7ebc2a94e7869">Eligibility UI mural</a>
-            </li>
-          </ul>
-  
-          {# <p>
-            <span class="govuk-!-font-weight-bold">Changelog:</span>
-            <br>
-            <ul class="govuk-list govuk-list--bullet">
-              <li><a href="/v0/home">V 0.1</a> - Initial thoughts on flow & screen designs</li>
-            </ul>
-          </p> #}
-  
-
-      </div>
-
-    </div>
-
+    {% include "govuk-prototype-kit/includes/homepage-bottom.njk" %}
   </div>
 </div>
 
