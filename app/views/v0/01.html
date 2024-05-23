@@ -1,0 +1,86 @@
+{% extends "layouts/main.html" %}
+
+
+{% block pageTitle %}
+Task screen/s
+{% endblock %}
+
+{% block header %}
+
+{% include "includes/internal-header-pip.html" %}
+
+
+  
+
+
+{% endblock %}
+
+{% block content %}
+
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    {# {% if data['task'] == 'process' %}
+
+    <form method="post" class="form">
+
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-three-quarters">
+
+            <h1 class="govuk-heading-l govuk-!-margin-bottom-1">Jeff Bridges</h1>
+
+            <p class="govuk-body govuk-!-font-size-19 govuk-!-margin-bottom-8">NA 11 22 33 C</p>
+
+        </div>
+      </div>
+
+
+      <h1 class="govuk-heading-xl govuk-!-margin-bottom-4">Application overview</h1>
+      <p class="govuk-body govuk-!-font-size-24 govuk-!-margin-bottom-1">Application submitted: 1 March 2024</p>
+      <p class="govuk-body govuk-!-font-size-24 govuk-!-margin-bottom-3">Date of assessment: 8 March 2024</p>
+
+      <p class="govuk-body govuk-!-font-size-19 govuk-!-margin-bottom-1">Primary condition: Macular degeneration</p>
+      <p class="govuk-body govuk-!-font-size-19 govuk-!-margin-bottom-6">Secondary conditions: Depression, anxiety
+        and arthritis</p>
+
+    </form>
+
+
+    <a href="tasklist?task=process" class="govuk-button" data-module="govuk-button">
+      Start task
+    </a>
+    <p><a href="pip-home?isRejected=yes&isCompleted=no">I cannot do this task</a></p>
+
+
+    {% elif data['task'] == 'eligibility' %} #}
+
+
+    <form method="post" class="form">
+
+      <h2 class="govuk-heading-l govuk-!-margin-bottom-1">Rachel Carter</h2>
+
+      <p class="govuk-body govuk-!-font-size-19 govuk-!-margin-bottom-8">NB 44 65 56 E</p>
+
+
+
+      <h1 class="govuk-heading-xl govuk-!-margin-bottom-4">Claim assurance & eligibility checks</h1>
+      <p class="govuk-body">Carry out each of the required checks to confirm the applicants eligibility to proceed.</p>
+      <p class="govuk-body govuk-!-font-size-24 govuk-!-margin-bottom-1">Application submitted: 1 March 2024</p>
+      <p class="govuk-body govuk-!-font-size-24 govuk-!-margin-bottom-6">Date of assessment: 8 March 2024</p>
+
+    </form>
+
+    <a href="02" class="govuk-button" data-module="govuk-button">
+      {{ "Continue task" if data['hasStarted'] == 'yes' else "Start task" }}
+    </a>
+    <p><a href="pip-home?isRejected=yes&isCompleted=no">I cannot do this task</a></p>
+
+    {# {% endif %} #}
+
+
+
+  </div>
+</div>
+
+{% endblock %}

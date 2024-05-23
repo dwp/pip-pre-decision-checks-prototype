@@ -1,0 +1,11 @@
+{% set html %}
+    <h3 class="govuk-notification-banner__heading">
+      Task completed successfully
+    </h3>
+    
+  {% endset %}
+
+  {{ govukNotificationBanner({
+    html: html,
+    type: "success"
+  }) }}
