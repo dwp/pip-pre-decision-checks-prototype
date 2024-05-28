@@ -1,0 +1,171 @@
+{% extends "layouts/main.html" %}
+
+
+{% block pageTitle %}
+Question 2/4
+{% endblock %}
+
+{% block header %}
+
+{% include "includes/internal-header-pip.html" %}
+
+
+  <main>
+    <header class="moj-primary-navigation">
+    <div class="govuk-width-container ">
+      <div class="moj-primary-navigation">
+
+        <div class="moj-primary-navigation__container">
+      
+          <div class="moj-primary-navigation__nav">
+      
+            <nav class="moj-primary-navigation" aria-label="Primary navigation">
+      
+              <ul class="moj-primary-navigation__list">
+                <li class="moj-primary-navigation__item" style="border-bottom: 5px solid #1d70b8;"> 
+                  <a class="moj-primary-navigation__link" aria-current="page" href="#">Tasks to do</a>
+                </span>  </li>
+    
+
+              </ul>
+      
+            </nav>
+      
+          </div>
+        </div>
+      
+      </div>
+      
+
+        
+    </div>
+    </header>
+    </main> 
+
+
+{% endblock %}
+
+{% block content %}
+
+
+<div class="govuk-width-container">
+  <a href="#" class="govuk-back-link">Back</a>
+  <main class="govuk-main-wrapper " id="main-content" role="main">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds-from-desktop">
+        <h1 class="govuk-heading-l">Check your answers before submitting them</h1>
+        <h2 class="govuk-heading-m">CIS data checks</h2>
+        <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Adult disability payment
+            </dt>
+            <dd class="govuk-summary-list__value">
+              No
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="#">Change<span class="govuk-visually-hidden"> adult disability payment</span></a>
+            </dd>
+          </div>
+
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Child disability payment
+            </dt>
+            <dd class="govuk-summary-list__value">
+              Yes
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="#">Change<span class="govuk-visually-hidden"> child disability payment</span></a>
+            </dd>
+          </div>
+
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Claimant withdrawal
+            </dt>
+            <dd class="govuk-summary-list__value">
+              No
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="#">Change<span class="govuk-visually-hidden"> claimant withdrawal</span></a>
+            </dd>
+          </div>
+
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Overlapping benefits
+            </dt>
+            <dd class="govuk-summary-list__value">
+              No
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="#">Change<span class="govuk-visually-hidden"> overlapping benefits</span></a>
+            </dd>
+          </div>
+
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Fraud checks
+            </dt>
+            <dd class="govuk-summary-list__value">
+              No
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="#">Change<span class="govuk-visually-hidden"> fraud checks</span></a>
+            </dd>
+          </div>
+
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Keeping customer interactions safe (UCB)
+            </dt>
+            <dd class="govuk-summary-list__value">
+              No
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="#">Change<span class="govuk-visually-hidden"> keeping customer interactions safe (UCB)</span></a>
+            </dd>
+          </div>
+
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Claimant deceased
+            </dt>
+            <dd class="govuk-summary-list__value">
+              No
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="#">Change<span class="govuk-visually-hidden"> claimant deceased</span></a>
+            </dd>
+          </div>
+
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Failure to supply
+            </dt>
+            <dd class="govuk-summary-list__value">
+              No
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="#">Change<span class="govuk-visually-hidden"> failure to supply</span></a>
+            </dd>
+          </div>
+          
+        </dl>
+
+        <p class="govuk-body">Render this once each of the above has been completed - allowing an agent to continue.</p>
+        <form action="06" method="post" novalidate>
+          <input type="hidden" name="answers-checked" value="true">
+          <button type="submit" class="govuk-button" data-module="govuk-button">
+            Complete and continue
+          </button>
+        </form>
+      </div>
+    </div>
+  </main>
+</div>
+
+</div>
+{% endblock %}
