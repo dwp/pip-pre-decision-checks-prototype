@@ -1,0 +1,49 @@
+{% extends "layouts/main.html" %}
+
+{% block pageTitle %}
+   {{ serviceName }}
+{% endblock %}
+
+{% block beforeContent %}
+  {# No need for back button here - task issues TODO - remove comment #}
+  {# {{ govukBackLink({
+  text: "Back",
+  href: "javascript:window.history.back()"
+}) }} #}
+{% endblock %}
+
+{% block content %}
+
+
+<h2 class="govuk-heading-l govuk-!-margin-bottom-1">Rachel Carter</h2>
+
+<p class="govuk-body govuk-!-font-size-19 govuk-!-margin-bottom-8">NB 44 65 56 E</p>
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-l">
+        Check the applicants details.
+      </h1>
+
+      <form class="form" action="./pre-checks-task-list" method="post">
+
+        <p class="govuk-body govuk-!-font-size-24 govuk-!-margin-bottom-6">
+          Complete any remaining claim assurance and eligibillity checks before referring this claim to an assessment provider.
+        </p>
+
+        <p class="govuk-body govuk-!-font-size-24 govuk-!-margin-bottom-1">Application submitted: 1 March 2024</p>
+        <p class="govuk-body govuk-!-font-size-24 govuk-!-margin-bottom-6">Date of assessment: 8 March 2024</p>
+
+        {{ govukButton({
+          text: "Start task"
+        }) }}
+
+        <p><a href="pip-home?isRejected=yes&isCompleted=no">I cannot do this task</a></p>
+
+      </form>
+
+    </div>
+  </div>
+
+{% endblock %}
