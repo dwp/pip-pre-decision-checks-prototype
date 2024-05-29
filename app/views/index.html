@@ -1,19 +1,71 @@
 {% extends "layouts/main.html" %}
 
-{% set pageName="Home" %}
+{% block pageTitle %}
+Home – {{serviceName}} – GOV.UK Prototype Kit
+{% endblock %}
 
 {% block content %}
 
 <div class="govuk-grid-row">
-  <div class="govuk-grid-column-two-thirds">
+  <div class="govuk-grid-column-full">
 
-    {% include "govuk-prototype-kit/includes/homepage-top.njk" %}
-
+    <!-- Insert your service name here -->
     <h1 class="govuk-heading-xl">
-      {{ serviceName }}
+      PIP pre-checks
     </h1>
 
-    {% include "govuk-prototype-kit/includes/homepage-bottom.njk" %}
+    <!-- Insert your team name here -->
+    <p>This prototype is maintained by Team Toucan.</p>
+
+    <!-- Add email contacts for key members of your team -->
+    <p>
+      <a href="mailto:paul.coffield@engineering.digital.dwp.gov.uk">Paul Coffield</a> (Interaction Designer) <br>
+
+      <br>
+
+      <h2 class="govuk-heading-m">About the service</h2>
+
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+     
+      <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <h2 class="govuk-heading-l" style="border-bottom: 1px solid lightgray; margin-bottom: 0">Claim assurance & Eligibility checks<br>
+          <span class="govuk-hint">Allow agents to perform manual data checks.</span>
+        </h2>
+  
+        <hr class="govuk-!-margin-top-0">
+  
+        <h2 class="govuk-heading-m">
+          Latest version
+        </h2>
+  
+        <ul
+          class="govuk-list govuk-list--bullet">
+          <li>
+            <a href="/v1/home">V 1.0</a>
+          </li>
+        </ul>
+
+        <p>
+          <span class="govuk-!-font-weight-bold">Changelog:</span>
+          <br>
+          <ul class="govuk-list govuk-list--bullet">
+            <li><a href="/v0/home">V 0.1</a> - Initial thoughts on flow & screen designs</li>
+          </ul>
+        </p>
+
+        <!-- How would you like to display the other versions of your prototype? You could use a details component here -->
+  
+        <hr>
+
+      </div>
+
+
+      </div>
+
+    </div>
+
   </div>
 </div>
 
