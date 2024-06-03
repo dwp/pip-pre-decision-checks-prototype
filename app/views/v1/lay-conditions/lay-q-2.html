@@ -53,7 +53,7 @@
   <main class="govuk-main-wrapper " id="main-content" role="main">
     <div class="govuk-grid-row">
       <div class="govuk-grid-column-two-thirds">
-        <form action="lay-q-3" method="post" novalidate>
+        <form method="post" novalidate>
           <div class="govuk-form-group">
             <fieldset class="govuk-fieldset">
               <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
@@ -65,14 +65,14 @@
               <p class="govuk-body">Prompt text here to detail how to confirm this...</p>
               <div class="govuk-radios" data-module="govuk-radios">
                 <div class="govuk-radios__item">
-                  <input class="govuk-radios__input" id="informationMatch" name="informationMatch" type="radio" value="yes">
-                  <label class="govuk-label govuk-radios__label" for="whereDoYouLive">
+                  <input class="govuk-radios__input" id="res-presCheck-1" name="res-presCheck" type="radio" value="yes" {{ checked('res-presCheck', 'yes') }}>
+                  <label class="govuk-label govuk-radios__label" for="res-presCheck-1">
                     Yes
                   </label>
                 </div>
                 <div class="govuk-radios__item">
-                  <input class="govuk-radios__input" id="informationMatch-2" name="informationMatch" type="radio" value="no">
-                  <label class="govuk-label govuk-radios__label" for="whereDoYouLive-2">
+                  <input class="govuk-radios__input" id="res-presCheck-2" name="res-presCheck" type="radio" value="no" {{ checked('res-presCheck', 'no')}}>
+                  <label class="govuk-label govuk-radios__label" for="res-presCheck-2">
                     No
                   </label>
                 </div>

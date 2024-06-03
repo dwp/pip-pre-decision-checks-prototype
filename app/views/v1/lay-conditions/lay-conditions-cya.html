@@ -63,10 +63,10 @@ Lay conditions - Check your answers
                 Posthumous claim
               </dt>
               <dd class="govuk-summary-list__value">
-                No
+                {{ data['posthumousCheck'] | title }}
               </dd>
               <dd class="govuk-summary-list__actions">
-                <a class="govuk-link" href="lay-q-1">Change<span class="govuk-visually-hidden"> posthumous claim</span></a>
+                <a class="govuk-link" href="lay-q-1?returnURL=lay-conditions-cya">Change<span class="govuk-visually-hidden"> posthumous claim</span></a>
               </dd>
             </div>
 
@@ -75,10 +75,10 @@ Lay conditions - Check your answers
                 Residence & presence
               </dt>
               <dd class="govuk-summary-list__value">
-                Yes
+                {{ data['res-presCheck'] | title }}
               </dd>
               <dd class="govuk-summary-list__actions">
-                <a class="govuk-link" href="lay-q-2">Change<span class="govuk-visually-hidden"> residence & presence</span></a>
+                <a class="govuk-link" href="lay-q-2?returnURL=lay-conditions-cya">Change<span class="govuk-visually-hidden"> residence & presence</span></a>
               </dd>
             </div>
 
@@ -87,10 +87,10 @@ Lay conditions - Check your answers
                 Imigration & nationality department (IND)
               </dt>
               <dd class="govuk-summary-list__value">
-                Yes
+                {{ data['indCheck'] | title }}
               </dd>
               <dd class="govuk-summary-list__actions">
-                <a class="govuk-link" href="lay-q-3">Change<span class="govuk-visually-hidden"> imigration and nationality department (IND)</span></a>
+                <a class="govuk-link" href="lay-q-3?returnURL=lay-conditions-cya">Change<span class="govuk-visually-hidden"> imigration and nationality department (IND)</span></a>
               </dd>
             </div>
 
@@ -99,17 +99,17 @@ Lay conditions - Check your answers
               Age criteria
             </dt>
             <dd class="govuk-summary-list__value">
-              Yes
+              {{ data['ageCheck'] | title }}
             </dd>
             <dd class="govuk-summary-list__actions">
-              <a class="govuk-link" href="lay-q-4">Change<span class="govuk-visually-hidden"> age criteria</span></a>
+              <a class="govuk-link" href="lay-q-4?returnURL=lay-conditions-cya">Change<span class="govuk-visually-hidden"> age criteria</span></a>
             </dd>
           </div>
           
         </dl>
 
         <p class="govuk-body">Render this once each of the above has been completed - allowing an agent to continue.</p>
-        <form action="06" method="post" novalidate>
+        <form action="../pre-checks-task-list" method="post" novalidate>
           <input type="hidden" name="answers-checked" value="true">
           <button type="submit" class="govuk-button" data-module="govuk-button">
             Complete and continue
