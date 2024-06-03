@@ -78,3 +78,78 @@ router.post('/v1/payability-checks/pay-q-1', (req, res) => {
      res.redirect('payability-checks-cya');
    }
  });
+
+
+ // CIS DATA CHECKS
+
+router.post('/v1/cis-data-checks/cis-q-1', (req, res) => {
+
+  if (req.query.returnURL){
+     res.redirect(req.query.returnURL);
+   } else {
+     res.redirect('cis-q-2');
+   }
+ });
+
+ router.post('/v1/cis-data-checks/cis-q-2', (req, res) => {
+
+  if (req.query.returnURL){
+     res.redirect(req.query.returnURL);
+   } else {
+     res.redirect('cis-q-3');
+   }
+ });
+ 
+ router.post('/v1/cis-data-checks/cis-q-3', (req, res) => {
+
+  if (req.query.returnURL){
+     res.redirect(req.query.returnURL);
+   } else {
+     res.redirect('cis-q-4');
+   }
+ });
+
+ router.post('/v1/cis-data-checks/cis-q-4', (req, res) => {
+
+  if (req.query.returnURL){
+     res.redirect(req.query.returnURL);
+   } else {
+     res.redirect('cis-q-5');
+   }
+ });
+
+ router.post('/v1/cis-data-checks/cis-q-5', (req, res) => {
+
+  if (req.query.returnURL){
+     res.redirect(req.query.returnURL);
+   } else {
+     res.redirect('cis-q-6');
+   }
+ });
+
+ router.post('/v1/cis-data-checks/cis-q-6', (req, res) => {
+
+  if (req.query.returnURL){
+     res.redirect(req.query.returnURL);
+   } else {
+     res.redirect('cis-q-7');
+   }
+ });
+
+ router.post('/v1/cis-data-checks/cis-q-7', (req, res) => {
+
+  if (req.query.returnURL){
+     res.redirect(req.query.returnURL);
+   } else {
+     res.redirect('cis-q-8');
+   }
+ });
+
+ router.post('/v1/cis-data-checks/cis-q-8', (req, res) => {
+
+  if (req.query.returnURL){
+     res.redirect(req.query.returnURL);
+   } else {
+     res.redirect('cis-data-checks-cya');
+   }
+ });

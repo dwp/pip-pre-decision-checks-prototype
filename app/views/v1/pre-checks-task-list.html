@@ -102,9 +102,8 @@ Task screen/s
             <li class="govuk-prototype-kit-task-list__item">
 
               <span class="govuk-prototype-kit-task-list__task-name">
-                <a href="03" aria-describedby="eligibility-status">
+                <a href={{ 'cis-data-checks/cis-data-checks-cya' if (data['adultDisCheck']) else 'cis-data-checks/cis-q-1' }} aria-describedby="eligibility-status">
                  CIS data checks 
-
                 </a>
               </span>
 
