@@ -54,7 +54,7 @@ Task screen/s
 
 
       <h1 class="govuk-heading-l">
-        Claim assurance & eligibility checks
+        Claim assurance and eligibility checks
       </h1>
     <br>
 
@@ -71,26 +71,23 @@ Task screen/s
 
               <li class="govuk-prototype-kit-task-list__item">
                 <span class="govuk-prototype-kit-task-list__task-name">
-                  <a href="lay-conditions/lay-q-1" aria-describedby="contact-details-status">
+                  <a href={{ 'lay-conditions/lay-conditions-cya' if (data['posthumousCheck']) else 'lay-conditions/lay-q-1' }} aria-describedby="lay-conditions-status">
                     Lay conditions
                   </a>
                 </span>
 
-              <strong class="govuk-tag govuk-tag--grey govuk-prototype-kit-task-list__tag" id="list-convictions-status">Not started</strong>
+              <strong class="govuk-tag govuk-tag--grey govuk-prototype-kit-task-list__tag" id="lay-conditions-status">Not started</strong>
 
             
             </li>
 
             <li class="govuk-prototype-kit-task-list__item">
               <span class="govuk-prototype-kit-task-list__task-name">
-                <a href="#" aria-describedby="contact-details-status">
+                <a href={{ 'payability-checks/payability-checks-cya' if (data['hospitalAccomCheck']) else 'payability-checks/pay-q-1' }} aria-describedby="payability-status">
                   Payability
                 </a>
               </span>
-
-            <strong class="govuk-tag govuk-tag--grey govuk-prototype-kit-task-list__tag" id="list-convictions-status">Not started</strong>
-
-          
+            <strong class="govuk-tag govuk-tag--grey govuk-prototype-kit-task-list__tag" id="payability-status">Not started</strong>
           </li>
            
           </ul>
@@ -105,9 +102,8 @@ Task screen/s
             <li class="govuk-prototype-kit-task-list__item">
 
               <span class="govuk-prototype-kit-task-list__task-name">
-                <a href="03" aria-describedby="eligibility-status">
+                <a href={{ 'cis-data-checks/cis-data-checks-cya' if (data['adultDisCheck']) else 'cis-data-checks/cis-q-1' }} aria-describedby="eligibility-status">
                  CIS data checks 
-
                 </a>
               </span>
 

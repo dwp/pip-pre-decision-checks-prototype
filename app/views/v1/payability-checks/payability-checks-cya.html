@@ -2,7 +2,7 @@
 
 
 {% block pageTitle %}
-Question 2/4
+Lay conditions - Check your answers
 {% endblock %}
 
 {% block header %}
@@ -49,54 +49,55 @@ Question 2/4
 
 
 <div class="govuk-width-container">
-  <a href="#" class="govuk-back-link">Back</a>
+  <a href="../pre-checks-task-list" class="govuk-back-link">Back</a>
   <main class="govuk-main-wrapper " id="main-content" role="main">
     <div class="govuk-grid-row">
       <div class="govuk-grid-column-two-thirds-from-desktop">
         <h1 class="govuk-heading-l">Check your answers before submitting them</h1>
         <h2 class="govuk-heading-m">Payability</h2>
         <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+          <div class="govuk-summary-list__row">
 
-          <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">
-              Hospital and other accomodations
-            </dt>
-            <dd class="govuk-summary-list__value">
-              No
-            </dd>
-            <dd class="govuk-summary-list__actions">
-              <a class="govuk-link" href="#">Change<span class="govuk-visually-hidden"> Hospital and other conditions</span></a>
-            </dd>
-          </div>
-          
-          <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">
-              Detention in legal custody
-            </dt>
-            <dd class="govuk-summary-list__value">
-              No
-            </dd>
-            <dd class="govuk-summary-list__actions">
-              <a class="govuk-link" href="#">Change<span class="govuk-visually-hidden"> detention in legal custody</span></a>
-            </dd>
-          </div>
-          
-          <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">
-              Motability
-            </dt>
-            <dd class="govuk-summary-list__value">
-              Yes
-            </dd>
-            <dd class="govuk-summary-list__actions">
-              <a class="govuk-link" href="#">Change<span class="govuk-visually-hidden"> motability</span></a>
-            </dd>
-          </div>
+            <div class="govuk-summary-list__row">
+              <dt class="govuk-summary-list__key">
+                Hospital and other accomodations
+              </dt>
+              <dd class="govuk-summary-list__value">
+                {{ data['hospitalAccomCheck'] | title }}
+              </dd>
+              <dd class="govuk-summary-list__actions">
+                <a class="govuk-link" href="pay-q-1?returnURL=payability-checks-cya">Change<span class="govuk-visually-hidden"> hospital and other accomodations</span></a>
+              </dd>
+            </div>
+
+            <div class="govuk-summary-list__row">
+              <dt class="govuk-summary-list__key">
+                Detention in legal custody
+              </dt>
+              <dd class="govuk-summary-list__value">
+                {{ data['legalCustodyCheck'] | title }}
+              </dd>
+              <dd class="govuk-summary-list__actions">
+                <a class="govuk-link" href="pay-q-2?returnURL=payability-checks-cya">Change<span class="govuk-visually-hidden"> detention in legal custody</span></a>
+              </dd>
+            </div>
+
+            <div class="govuk-summary-list__row">
+              <dt class="govuk-summary-list__key">
+                Motability
+              </dt>
+              <dd class="govuk-summary-list__value">
+                {{ data['motabilityCheck'] | title }}
+              </dd>
+              <dd class="govuk-summary-list__actions">
+                <a class="govuk-link" href="pay-q-3?returnURL=payability-checks-cya">Change<span class="govuk-visually-hidden"> motability</span></a>
+              </dd>
+            </div>
           
         </dl>
 
         <p class="govuk-body">Render this once each of the above has been completed - allowing an agent to continue.</p>
-        <form action="06" method="post" novalidate>
+        <form action="../pre-checks-task-list" method="post" novalidate>
           <input type="hidden" name="answers-checked" value="true">
           <button type="submit" class="govuk-button" data-module="govuk-button">
             Complete and continue

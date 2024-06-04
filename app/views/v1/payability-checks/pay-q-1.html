@@ -49,30 +49,31 @@
 
 
 <div class="govuk-width-container">
-  <a href="#" class="govuk-back-link">Back</a>
+  <a href="lay-conditions-cya" class="govuk-back-link">Back</a>
   <main class="govuk-main-wrapper " id="main-content" role="main">
     <div class="govuk-grid-row">
       <div class="govuk-grid-column-two-thirds">
+
         <form method="post" novalidate>
           <div class="govuk-form-group">
             <fieldset class="govuk-fieldset">
               <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
                 <h1 class="govuk-fieldset__heading">
-                  Is the claimant over 16 years old and under State Pension age?
+                  Has the claimant spent any time in hospital or other care accommodation?
                 </h1>
               </legend>
 
-              <p class="govuk-body">Prompt text here to detail how to confirm this...</p>
+              <p class="govuk-body">Hint text on how to check this data.</p>
               <div class="govuk-radios" data-module="govuk-radios">
                 <div class="govuk-radios__item">
-                  <input class="govuk-radios__input" id="ageCheck-1" name="ageCheck" type="radio" value="yes" {{ checked('ageCheck', 'yes') }}>
-                  <label class="govuk-label govuk-radios__label" for="ageCheck-1">
+                  <input class="govuk-radios__input" id="hospitalAccomCheck-1" name="hospitalAccomCheck" type="radio" value="yes" {{ checked('hospitalAccomCheck', 'yes') }}>
+                  <label class="govuk-label govuk-radios__label" for="hospitalAccomCheck-1">
                     Yes
                   </label>
                 </div>
                 <div class="govuk-radios__item">
-                  <input class="govuk-radios__input" id="ageCheck-2" name="ageCheck" type="radio" value="no" {{ checked('ageCheck', 'no') }}>
-                  <label class="govuk-label govuk-radios__label" for="ageCheck-2">
+                  <input class="govuk-radios__input" id="hospitalAccomCheck-2" name="hospitalAccomCheck" type="radio" value="no" {{ checked('hospitalAccomCheck', 'no') }}>
+                  <label class="govuk-label govuk-radios__label" for="hospitalAccomCheck-2">
                     No
                   </label>
                 </div>
