@@ -53,26 +53,26 @@
   <main class="govuk-main-wrapper " id="main-content" role="main">
     <div class="govuk-grid-row">
       <div class="govuk-grid-column-two-thirds">
-        <form action="lay-q-4" method="post" novalidate>
+        <form method="post" novalidate>
           <div class="govuk-form-group">
             <fieldset class="govuk-fieldset">
               <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
                 <h1 class="govuk-fieldset__heading">
-                  Confirm Imigration & Nationality Department (IND) status?
+                  What is the claimants Imigration and Nationality Department (IND) status?
                 </h1>
               </legend>
 
               <p class="govuk-body">Prompt text here to detail how to confirm this...</p>
               <div class="govuk-radios" data-module="govuk-radios">
                 <div class="govuk-radios__item">
-                  <input class="govuk-radios__input" id="informationMatch" name="informationMatch" type="radio" value="yes">
-                  <label class="govuk-label govuk-radios__label" for="whereDoYouLive">
-                    Yes
+                  <input class="govuk-radios__input" id="indCheck-1" name="indCheck" type="radio" value="yes" {{ checked('indCheck', 'yes') }}>
+                  <label class="govuk-label govuk-radios__label" for="indCheck-1">
+                    Yes (source appropraite options here)
                   </label>
                 </div>
                 <div class="govuk-radios__item">
-                  <input class="govuk-radios__input" id="informationMatch-2" name="informationMatch" type="radio" value="no">
-                  <label class="govuk-label govuk-radios__label" for="whereDoYouLive-2">
+                  <input class="govuk-radios__input" id="indCheck-2" name="indCheck" type="radio" value="no" {{ checked('indCheck', 'no') }}>
+                  <label class="govuk-label govuk-radios__label" for="indCheck-2">
                     No
                   </label>
                 </div>
