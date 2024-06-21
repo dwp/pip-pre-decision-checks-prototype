@@ -4,6 +4,25 @@
 Home – {{serviceName}} – GOV.UK Prototype Kit
 {% endblock %}
 
+{% block beforeContent %}
+
+    <div class="govuk-phase-banner">
+      <p class="govuk-phase-banner__content">
+        <strong class="govuk-tag govuk-tag--red govuk-phase-banner__content__tag">
+          Agent
+        </strong>
+        <strong class="govuk-tag govuk-tag--blue govuk-phase-banner__content__tag">
+          PIP: Orientation
+        </strong>
+        <strong class="govuk-tag govuk-tag--green govuk-phase-banner__content__tag">
+          Check eligibility
+        </strong>
+      </p>
+    </div>
+
+{% endblock %}
+
+
 {% block content %}
 
 <div class="govuk-grid-row">
@@ -23,9 +42,9 @@ Home – {{serviceName}} – GOV.UK Prototype Kit
 
       <br>
 
-      <h2 class="govuk-heading-m">About the service</h2>
+      <h2 class="govuk-heading-m">Purpose</h2>
 
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <p>Mannually confirm claimant details and confirm eligibilty for PIP.</p>
       <br>
 
      
